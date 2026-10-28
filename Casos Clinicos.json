@@ -1,0 +1,163 @@
+[
+  {
+    "id": "1",
+    "titulo": "Discapacidad Visual de Origen Cortical sin Ambliopía Concurrente",
+    "edad": "5 años",
+    "motivo_consulta": "Remisión especializada por déficit en el neurodesarrollo visual y alteraciones de la integración visomotora.",
+    "antecedentes": "Producto de embarazo gemelar heterocigoto (37 semanas), bajo peso al nacer (percentil 10). Antecedente materno de preeclampsia. Encefalopatía hipóxico-isquémica perinatal leve (estadio 1 de Sarnat), alteraciones de la vía visual posterior y dispraxia.",
+    "examen_motor": {
+      "cover_test": "Ortoforia, sin evidencia clínica de estrabismo manifiesto o latente.",
+      "motilidad": "Dificultad en la coordinación motora fina y gruesa (dispraxia), sin disfunciones oculomotoras primarias asociadas."
+    },
+    "refraccion": {
+      "agudeza_visual": "Agudeza visual mejor corregida (AVMC): OD 2/10 (20/100); OI 5/10 (20/40).",
+      "retinoscopia": "Astigmatismo hipermetrópico compuesto con la regla bilateral. Refracción bajo cicloplejía OD +1.00 -0.50 x 170°; OI +1.25 -0.75 x 10°."
+    },
+    "opciones_conducta": [
+      "Observación clínica estricta sin prescripción óptica",
+      "Prescripción óptica total y oclusión terapéutica del ojo dominante",
+      "Terapia neurosensorial exclusiva sin penalización oclusiva"
+    ],
+    "conducta_correcta": "Prescripción óptica total y oclusión terapéutica del ojo dominante.",
+    "justificacion_clinica": "El abordaje neuro-optométrico mediante prescripción no ciclopléjica y oclusión secundaria diaria del ojo con mejor visión durante 8 meses, en sinergia con estimulación visual, optimizó la neuroplasticidad de las vías visuales posquiasmáticas, incrementando la AVCC OD 6/10 (20/33) ; OI 8/10 (20/25) a pesar de la ausencia de ambliopía clásica.",
+    "bibliografia": "Sica A, Michieletto P, Pensiero S, Barbi E. Successful treatment of cortical visual impairment in children using anti-amblyopia treatment despite the absence of amblyopia: a case report. Ital J Pediatr. 2024;50(1):123."
+  },
+  {
+    "id": "2",
+    "titulo": "Endotropía Acomodativa Refractiva y Ambliopía Anisometrópica",
+    "edad": "9 meses",
+    "motivo_consulta": "Endodesviación del ojo derecho advertida por los padres desde los 4 meses de edad.",
+    "antecedentes": "Nacido a término con neurodesarrollo normotípico. Sin antecedentes sistémicos, historia familiar de estrabismo o ambliopía.",
+    "examen_motor": {
+      "cover_test": "Endotropía intermitente del ojo derecho de 30-35 dioptrías prismáticas (DP), de mayor magnitud en visión próxima.",
+      "motilidad": "Versiones y ducciones completas. Presencia de tortícolis compensatoria hacia la derecha con preferencia de fijación cruzada a la izquierda."
+    },
+    "refraccion": {
+      "agudeza_visual": "Fijación central, estable y mantenida (CSM) en OD, pero con endodesviación manifiesta.",
+      "retinoscopia": "Refracción bajo cicloplejía: OD +4.75 -0.75 x 175°; OI +2.25 -0.75 x 175°."
+    },
+    "opciones_conducta": [
+      "Intervención quirúrgica temprana de musculatura extraocular",
+      "Prescripción óptica total bajo cicloplejía, terapia ortóptica y penalización oclusiva",
+      "Quimiodenervación de rectos medios con toxina botulínica"
+    ],
+    "conducta_correcta": "Prescripción óptica total bajo cicloplejía, terapia ortóptica y penalización oclusiva.",
+    "justificacion_clinica": "La corrección óptica oportuna del defecto anisometrópico hipermetrópico mitiga la convergencia acomodativa excesiva, restaurando la ortotropía. La integración de terapia visual y oclusión contrarresta el déficit neurosensorial y previene la instauración de una ambliopía refractiva profunda.",
+    "bibliografia": "Al-Tamimi N, Khan MW, Ali MA, Graini F. Orthotropic Outcome With Spectacle Correction in a Pediatric Case of Refractive Esotropia and Anisometropic Amblyopia. Clin Case Rep. 2026."
+  },
+  {
+    "id": "3",
+    "titulo": "Miopía Axial Magna Degenerativa Secundaria a Glaucoma Congénito Primario",
+    "edad": "11 años",
+    "motivo_consulta": "Disminución progresiva de la agudeza visual en todas las distancias de trabajo.",
+    "antecedentes": "Glaucoma congénito primario (GCP) bilateral, miopía magna, endotropía, nistagmo y ambliopía profunda. Iridectomía superior bilateral a los 5 días de vida y corrección quirúrgica del estrabismo a los 2 años. Terapia hipotensora actual con Latanoprost 0.005%.",
+    "examen_motor": {
+      "cover_test": "Endotropía básica concomitante alternante de gran ángulo (65 DP) con dominancia del ojo derecho.",
+      "motilidad": "Nistagmo latente horizontal puro. Versiones conservadas y ducciones simétricas sin paresias oculomotoras."
+    },
+    "refraccion": {
+      "agudeza_visual": "Agudeza visual no corregida (AVSC) en visión lejana: 20/200 en ambos ojos (OU).",
+      "retinoscopia": "Miopía axial alta con astigmatismo miópico compuesto. OD: -15.00 -1.25 x 15° AV 20/160; OI: -14.50 -2.00 x 140° AV 20/125."
+    },
+    "opciones_conducta": [
+      "Mantenimiento de corrección oftálmica con lentes de alto índice",
+      "Adaptación de lentes de contacto rígidos gas permeables (LCRGP)",
+      "Adaptación especializada de lentes de contacto blandos (LCB) personalizados"
+    ],
+    "conducta_correcta": "Adaptación especializada de lentes de contacto blandos (LCB) personalizados.",
+    "justificacion_clinica": "Ante la intolerancia corneal a los LCRGP, la adaptación de LCB personalizados optimizó la calidad de la imagen retiniana reduciendo las aberraciones periféricas, estabilizó el componente sensoriomotor disminuyendo la amplitud del nistagmo, y proporcionó un mayor nivel de confort, mejorando significativamente la calidad de vida de la paciente.",
+    "bibliografia": "Carvajal Ortiz AM, Muñoz Gómez PA, Peñaloza Silva MA, Narváez Rumié OM. Impacto visual desde el abordaje oftálmico y contactológico en paciente pediátrica con miopía alta degenerativa secundaria a glaucoma congénito primario, 2025-2006: Reporte de caso. Univ Santo Tomás; 2025."
+  },
+  {
+    "id": "4",
+    "titulo": "Persistencia de la Vasculatura Fetal (PVF) Asociada a Catarata Congénita",
+    "edad": "14 años",
+    "motivo_consulta": "Control optométrico de rutina. El paciente refiere pobre adherencia al uso de la corrección óptica.",
+    "antecedentes": "Leucocoria unilateral congénita OD, persistencia de la vasculatura fetal (PVF), afaquia OD por facoemulsificación y vitrectomía anterior a los 2 meses. Corrección quirúrgica de estrabismo comitante convergente en 2014.",
+    "examen_motor": {
+      "cover_test": "Ortoforia/micromotropía con mejoría posquirúrgica de la endodesviación adquirida.",
+      "motilidad": "Microftalmia leve, heterocromía de iris, y pupila amplia e hiporreactiva en OD."
+    },
+    "refraccion": {
+      "agudeza_visual": "OD: Limitación visual funcional indicativa de ambliopía ex anopsia profunda; OI: 20/20 sin corrección.",
+      "retinoscopia": "OD: Neutro (afaquia no corregida funcionalmente en controles previos); OI: Equivalente esférico de +0.25 D."
+    },
+    "opciones_conducta": [
+      "Reintervención quirúrgica de polo posterior para vitrectomía extendida",
+      "Adaptación de lente de contacto con sobre-refracción hipermetrópica agresiva en OD",
+      "Prescripción de lente oftálmico de protección (policarbonato) para ojo sano y manejo cosmoprotésico"
+    ],
+    "conducta_correcta": "Prescripción de lente oftálmico de protección (policarbonato) para ojo sano y manejo cosmoprotésico.",
+    "justificacion_clinica": "Dado el compromiso estructural subyacente (microftalmia) y la ambliopía por deprivación consolidada a pesar de la intervención temprana, el potencial visual del OD es nulo. El objetivo terapéutico prioritario debe enfocarse en la profilaxis de trauma del ojo fijador (OI) y la rehabilitación estética del paciente.",
+    "bibliografia": "Ramírez Herrera NY, Jaimes Rueda AC, Moreno S, Narváez R OM. Abordaje clínico visual de un paciente pediátrico con persistencia de la vasculatura fetal y catarata congénita: reporte de caso. 2024."
+  },
+  {
+    "id": "5",
+    "titulo": "Ambliopía Severa Anisometrópica Secundaria a Miopía Magna Unilateral",
+    "edad": "8 años",
+    "motivo_consulta": "Control optométrico por disminución de la agudeza visual en todas las distancias de trabajo asociado al deterioro de los lentes oftálmicos actuales.",
+    "antecedentes": "Exotropía del OI diagnosticada a los 2 años. Tratamiento de penalización oclusiva previa con nula adherencia terapéutica y sin corrección óptica instaurada. Antecedente familiar (madre) de miopía magna.",
+    "examen_motor": {
+      "cover_test": "Ortoforia en visión lejana; exoforia fisiológica de 4 dioptrías prismáticas (DP) en visión próxima.",
+      "motilidad": "Exotropía histórica estabilizada a exoforia leve compensada. Versiones y ducciones completas."
+    },
+    "refraccion": {
+      "agudeza_visual": "AVSC: OD 20/30, OI 20/1200. AVMC: OD 20/20, OI 20/150.",
+      "retinoscopia": "Refracción bajo cicloplejía con ciclopentolato al 1%: OD Neutro -1.00 x 0° AV 20/20; OI -9.50 -1.50 x 170° AV 20/150."
+    },
+    "opciones_conducta": [
+      "Terapia de penalización farmacológica oftálmica con ciclopentolato/atropina",
+      "Corrección óptica en gafas asféricas y oclusión directa de tiempo parcial",
+      "Adaptación de lente de contacto blando tórico, parcheo estructurado y terapia ortóptica progresiva"
+    ],
+    "conducta_correcta": "Adaptación de lente de contacto blando tórico, parcheo estructurado y terapia ortóptica progresiva.",
+    "justificacion_clinica": "La adaptación del lente de contacto neutraliza la aniseiconia y las aberraciones ópticas inherentes a la anisometropía extrema. Esto, en sinergia con un régimen de oclusión estructurada y entrenamiento ortóptico progresivo, restableció de manera eficaz las vías neurosensoriales binoculares y mejoró la AVMC del ojo ambliope.",
+    "bibliografia": "Morales López A, Calderón Alvarado L, Casillas E, Narváez OM. Manejo integral de ambliopía severa anisometrópica en paciente pediátrico con miopía magna unilateral en Barranquilla Colombia 2025: reporte de caso clínico. 2025."
+  },
+  {
+    "id": "6",
+    "titulo": "Ambliopía Refractiva Binocular Anisometrópica No Estrábica",
+    "edad": "8 años",
+    "motivo_consulta": "Remisión escolar por déficit visual persistente, astenopia al esfuerzo acomodativo y bajo rendimiento académico manifestado por disfunción en la integración visomotora.",
+    "antecedentes": "Déficit atencional secundario, dificultades en el aprendizaje lectoescritor y torpeza motriz leve en evaluación del neurodesarrollo.",
+    "examen_motor": {
+      "cover_test": "Cover test en visión lejana: Endoforia compensada de 3 a 4 dioptrías prismáticas (DP).",
+      "motilidad": "Movimientos sacádicos hipométricos y deficiencias en la ejecución de la motricidad gruesa afectando el equilibrio dinámico."
+    },
+    "refraccion": {
+      "agudeza_visual": "Agudeza visual mejor corregida (AVMC): OD 0.7 (+2) 20/30; OI 0.4 20/50 (esfuerzo visual marcado y lectura lenta).",
+      "retinoscopia": "Astigmatismo hipermetrópico compuesto anisometrópico: OD +2.00 sph; OI +5.00 -1.50 x 180°."
+    },
+    "opciones_conducta": [
+      "Adición positiva progresiva en lentes oftálmicos bifocales",
+      "Terapia de fototerapia optométrica (Syntonics), integración de reflejos primitivos y optimización de corrección óptica",
+      "Manejo expectante o intervención quirúrgica temprana"
+    ],
+    "conducta_correcta": "Terapia de fototerapia optométrica (Syntonics), integración de reflejos primitivos y optimización de corrección óptica.",
+    "justificacion_clinica": "El estímulo lumínico dirigido (fototerapia Alfa delta/Mu delta) permitió la expansión de los campos visuales funcionales. La terapia neurosensomotora consolidó la integración de los reflejos motores y, mediante la hipocorrección esférica graduada en OI (+3.25 esf), se logró estabilizar la función acomodativa alcanzando una AVMC binocular de 1.2 y una estereopsis de 20 segundos de arco.",
+    "bibliografia": "Ambliopía binocular anisometrópica no estrábica. Caso Clínico."
+  },
+  {
+    "id": "7",
+    "titulo": "Ambliopía Ametrópica Bilateral Secundaria a Astigmatismo Mixto Elevado",
+    "edad": "7 años",
+    "motivo_consulta": "Remisión de tamizaje visual básico para evaluación optométrica especializada y refracción.",
+    "antecedentes": "Desarrollo sistémico y ocular normotípico. Antecedentes heredo-familiares, patológicos y quirúrgicos negativos.",
+    "examen_motor": {
+      "cover_test": "Ortoforia en posiciones primarias de mirada (visión lejana, 40 cm y 20 cm).",
+      "motilidad": "Dominancia motora derecha, test de Hirschberg centrado bilateralmente y ángulo Kappa positivo fisiológico. Ducciones y versiones sin restricciones."
+    },
+    "refraccion": {
+      "agudeza_visual": "Agudeza visual no corregida (AVSC) en visión lejana: OD 20/100, OI 20/100.",
+      "retinoscopia": "Refracción estática bajo cicloplejía en formato de cilindro negativo: OD +2.00 -2.00 x 20°; OI +2.00 -2.00 x 0°."
+    },
+    "opciones_conducta": [
+      "Prescripción de régimen de oclusión alterna estricta a tiempo completo",
+      "Prescripción óptica total bajo cicloplejia de uso permanente y control evolutivo al mes",
+      "Terapia visual acomodativa exclusiva sin prescripción de lentes oftálmicos"
+    ],
+    "conducta_correcta": "Prescripción óptica total bajo cicloplejia de uso permanente y control evolutivo al mes.",
+    "justificacion_clinica": "Ante una ambliopía ametrópica secundaria a un defecto astigmático mixto altamente ambliogénico y simétrico (AVSC 20/100 OU), la primera línea terapéutica consiste en la corrección óptica exacta determinada bajo cicloplejia. Su uso ininterrumpido actúa como profilaxis contra el empeoramiento del déficit neurosensorial y fomenta el adecuado desarrollo de la vía visual aferente.",
+    "bibliografia": "REPORTE DE CASO. Consulta de ortóptica."
+  }
+]

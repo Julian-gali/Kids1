@@ -1,0 +1,16 @@
+{
+  "name": "proyecto-pediatria",
+  "version": "1.0.0",
+  "description": "Simulador de Casos Clínicos Pediátricos en Optometría",
+  "scripts": {
+    "start": "node dev-server.js",
+    "dev": "node dev-server.js"
+  },
+  "keywords": [
+    "optometria",
+    "pediatria",
+    "casos-clinicos"
+  ],
+  "author": "",
+  "license": "ISC"
+}

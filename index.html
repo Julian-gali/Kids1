@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="OptoKids — Plataforma educativa de análisis sensoriomotor para estudiantes de optometría pediátrica.">
+  <title>OptoKids — Análisis Sensoriomotor Pediátrico</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='85'>👁️</text></svg>">
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="app-header" id="app-header">
+    <div class="header-inner">
+
+      <!-- Logo -->
+      <a href="#inicio" class="logo" id="logo-link">
+        <div class="logo-icon" aria-hidden="true">
+          <!-- Eye SVG icon -->
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+            <circle cx="12" cy="12" r="3"/>
+          </svg>
+        </div>
+        <div>
+          <div class="logo-text">Opto<span>Kids</span></div>
+          <div class="logo-subtitle">Sensoriomotor Pediátrico</div>
+        </div>
+      </a>
+
+      <!-- Navigation -->
+      <nav class="header-nav" id="main-nav">
+        <a href="#inicio" class="nav-link active" data-view="inicio">Inicio</a>
+        <a href="#casos" class="nav-link" data-view="casos">Casos Clínicos</a>
+      </nav>
+
+      <!-- Case Counter -->
+      <div class="case-counter" id="case-counter" title="Casos resueltos correctamente">
+        <span class="case-counter-icon" aria-hidden="true">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 6 9 17 4 12"/>
+          </svg>
+        </span>
+        <span>Resueltos:</span>
+        <span class="case-counter-number" id="counter-value">0</span>
+      </div>
+
+    </div>
+  </header>
+
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main class="app-main" id="app-main">
+
+    <!-- VIEW: Inicio -->
+    <section class="view active visible" id="view-inicio" data-view="inicio">
+      <div class="page-container">
+
+        <!-- Hero — Split two-column layout -->
+        <div class="home-hero">
+
+          <!-- Left: Text & CTA -->
+          <div class="hero-content">
+            <div class="hero-badge">
+              <span class="hero-badge-dot"></span>
+              Herramienta Educativa
+            </div>
+
+            <h1 class="hero-title">
+              Aprende <span class="highlight">Análisis<br>Sensoriomotor</span>
+              con casos clínicos pediátricos
+            </h1>
+
+            <p class="hero-description">
+              Practica la evaluación del sistema sensoriomotor binocular en pacientes
+              pediátricos. Analiza datos clínicos reales, interpreta hallazgos y desarrolla
+              tu razonamiento clínico con retroalimentación inmediata.
+            </p>
+
+            <div class="hero-actions">
+              <button class="btn-primary" id="btn-start-cases">
+                Iniciar Casos Clínicos
+                <span class="btn-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"/>
+                    <polyline points="12 5 19 12 12 19"/>
+                  </svg>
+                </span>
+              </button>
+              <button class="btn-secondary" id="btn-learn-more">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"/>
+                  <line x1="12" y1="16" x2="12" y2="12"/>
+                  <line x1="12" y1="8" x2="12.01" y2="8"/>
+                </svg>
+                ¿Qué es el análisis sensoriomotor?
+              </button>
+            </div>
+
+            <!-- Stats strip -->
+            <div class="hero-stats">
+              <div class="hero-stat">
+                <span class="hero-stat-value">7</span>
+                <span class="hero-stat-label">Casos clínicos</span>
+              </div>
+              <div class="hero-stat-divider"></div>
+              <div class="hero-stat">
+                <span class="hero-stat-value">100%</span>
+                <span class="hero-stat-label">Basado en evidencia</span>
+              </div>
+              <div class="hero-stat-divider"></div>
+              <div class="hero-stat">
+                <span class="hero-stat-value">0–14</span>
+                <span class="hero-stat-label">Años de edad</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Clinic Illustration -->
+          <div class="hero-illustration" aria-hidden="true">
+            <div class="hero-illustration-inner">
+              <!-- SVG Inline: Consultorio Pediátrico de Optometría -->
+              <svg viewBox="0 0 480 270" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ilustración del Consultorio Pediátrico">
+                <!-- Room background -->
+                <rect width="480" height="270" fill="#F0F4FB" rx="12"/>
+                <!-- Floor -->
+                <rect x="0" y="200" width="480" height="70" fill="#E2E8F4" rx="0"/>
+                <!-- Wall accent -->
+                <rect x="0" y="0" width="480" height="200" fill="#EEF2FA"/>
+                <!-- Wall border -->
+                <line x1="0" y1="200" x2="480" y2="200" stroke="#C9D4EC" stroke-width="1.5"/>
+                <!-- Window -->
+                <rect x="330" y="20" width="110" height="90" rx="6" fill="#BFD7F5" stroke="#A8C4E8" stroke-width="2"/>
+                <line x1="385" y1="20" x2="385" y2="110" stroke="#A8C4E8" stroke-width="1.5"/>
+                <line x1="330" y1="65" x2="440" y2="65" stroke="#A8C4E8" stroke-width="1.5"/>
+                <!-- Sunshine rays -->
+                <circle cx="440" cy="20" r="18" fill="#FDE68A" opacity="0.5"/>
+                <!-- Curtain left -->
+                <path d="M330 20 Q340 65 330 110" stroke="#7BA7D4" stroke-width="3" fill="none"/>
+                <path d="M440 20 Q430 65 440 110" stroke="#7BA7D4" stroke-width="3" fill="none"/>
+                <!-- Eye chart on wall -->
+                <rect x="40" y="25" width="80" height="110" rx="4" fill="white" stroke="#C9D4EC" stroke-width="1.5"/>
+                <text x="80" y="50" text-anchor="middle" font-family="monospace" font-size="18" font-weight="700" fill="#1E3A5F">E</text>
+                <text x="80" y="68" text-anchor="middle" font-family="monospace" font-size="13" font-weight="600" fill="#1E3A5F">FP</text>
+                <text x="80" y="83" text-anchor="middle" font-family="monospace" font-size="10" font-weight="500" fill="#2D5A9E">TOZ</text>
+                <text x="80" y="96" text-anchor="middle" font-family="monospace" font-size="8" fill="#4475B8">LPED</text>
+                <text x="80" y="107" text-anchor="middle" font-family="monospace" font-size="6" fill="#6B96C8">PECFD</text>
+                <text x="80" y="116" text-anchor="middle" font-family="monospace" font-size="5" fill="#8AAFD8">EDCZP</text>
+                <text x="80" y="124" text-anchor="middle" font-family="monospace" font-size="4.2" fill="#A3BFE0">FELOPZD</text>
+                <!-- Chart label -->
+                <rect x="55" y="128" width="50" height="4" rx="1" fill="#DEE8F4"/>
+                <!-- Examination chair -->
+                <!-- Chair base -->
+                <rect x="175" y="178" width="110" height="22" rx="6" fill="#2D5A9E" opacity="0.85"/>
+                <!-- Chair pole -->
+                <rect x="225" y="148" width="10" height="35" rx="3" fill="#4475B8"/>
+                <!-- Chair seat -->
+                <rect x="185" y="145" width="90" height="30" rx="8" fill="#3A6BC2"/>
+                <!-- Chair back -->
+                <rect x="200" y="95" width="65" height="55" rx="8" fill="#2D5A9E"/>
+                <!-- Chair headrest -->
+                <rect x="210" y="78" width="45" height="22" rx="6" fill="#4475B8"/>
+                <!-- Armrests -->
+                <rect x="182" y="148" width="18" height="8" rx="4" fill="#4475B8"/>
+                <rect x="260" y="148" width="18" height="8" rx="4" fill="#4475B8"/>
+                <!-- Child patient (stylized) -->
+                <!-- Body -->
+                <rect x="210" y="120" width="45" height="40" rx="6" fill="#FEB27B" opacity="0.9"/>
+                <!-- Head -->
+                <circle cx="232" cy="106" r="18" fill="#FDDBB4"/>
+                <!-- Hair -->
+                <path d="M214 100 Q232 86 250 100" fill="#8B4513" stroke="none"/>
+                <!-- Eye left -->
+                <circle cx="226" cy="105" r="2.5" fill="#2D2D2D"/>
+                <circle cx="227" cy="104" r="0.8" fill="white"/>
+                <!-- Eye right -->
+                <circle cx="238" cy="105" r="2.5" fill="#2D2D2D"/>
+                <circle cx="239" cy="104" r="0.8" fill="white"/>
+                <!-- Smile -->
+                <path d="M228 111 Q232 115 236 111" stroke="#8B4513" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+                <!-- Legs -->
+                <rect x="213" y="155" width="15" height="35" rx="4" fill="#5B8DD9"/>
+                <rect x="237" y="155" width="15" height="35" rx="4" fill="#5B8DD9"/>
+                <!-- Shoes -->
+                <ellipse cx="220" cy="190" rx="10" ry="5" fill="#1E3A5F"/>
+                <ellipse cx="244" cy="190" rx="10" ry="5" fill="#1E3A5F"/>
+                <!-- Doctor (right side) -->
+                <!-- Doctor body -->
+                <rect x="310" y="120" width="50" height="70" rx="6" fill="white" stroke="#C9D4EC" stroke-width="1"/>
+                <!-- Lab coat pocket -->
+                <rect x="315" y="135" width="15" height="10" rx="2" fill="#E8F0FB" stroke="#C9D4EC" stroke-width="0.8"/>
+                <!-- Stethoscope -->
+                <path d="M335 125 Q345 140 335 150" stroke="#4475B8" stroke-width="2.5" fill="none"/>
+                <circle cx="335" cy="152" r="4" fill="#2D5A9E"/>
+                <!-- Doctor head -->
+                <circle cx="335" cy="104" r="18" fill="#FDDBB4"/>
+                <!-- Doctor hair -->
+                <path d="M317 98 Q335 84 353 98 L353 104 Q335 90 317 104 Z" fill="#4A2C0A"/>
+                <!-- Doctor eyes -->
+                <circle cx="329" cy="104" r="2" fill="#2D2D2D"/>
+                <circle cx="341" cy="104" r="2" fill="#2D2D2D"/>
+                <!-- Doctor glasses -->
+                <rect x="324" y="101" width="10" height="7" rx="3" fill="none" stroke="#4475B8" stroke-width="1.2"/>
+                <rect x="336" y="101" width="10" height="7" rx="3" fill="none" stroke="#4475B8" stroke-width="1.2"/>
+                <line x1="334" y1="104.5" x2="336" y2="104.5" stroke="#4475B8" stroke-width="1"/>
+                <!-- Retinoscope in hand -->
+                <rect x="295" y="128" width="6" height="28" rx="3" fill="#4475B8"/>
+                <circle cx="298" cy="126" r="5" fill="#BFD7F5" stroke="#4475B8" stroke-width="1"/>
+                <!-- Light beam from retinoscope -->
+                <path d="M293 127 Q278 118 265 122" stroke="#FDE68A" stroke-width="2" stroke-dasharray="3,2" opacity="0.7"/>
+                <!-- Trial frame on patient -->
+                <rect x="220" y="103" width="25" height="10" rx="3" fill="none" stroke="#4475B8" stroke-width="1.5"/>
+                <line x1="232" y1="103" x2="232" y2="113" stroke="#4475B8" stroke-width="1"/>
+                <!-- Instrument table -->
+                <rect x="375" y="148" width="80" height="55" rx="6" fill="#D1DDEF" stroke="#C9D4EC" stroke-width="1"/>
+                <!-- Lens set on table -->
+                <circle cx="395" cy="165" r="8" fill="#BFD7F5" stroke="#7BA7D4" stroke-width="1"/>
+                <circle cx="412" cy="165" r="8" fill="#BFD7F5" stroke="#7BA7D4" stroke-width="1"/>
+                <circle cx="429" cy="165" r="8" fill="#BFD7F5" stroke="#7BA7D4" stroke-width="1"/>
+                <!-- Prism bar -->
+                <rect x="393" y="178" width="55" height="8" rx="3" fill="#A8C4E8" stroke="#7BA7D4" stroke-width="0.8"/>
+                <!-- Label -->
+                <text x="240" y="255" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#8AAFD8" font-weight="500">Consultorio Pediátrico de Optometría</text>
+              </svg>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Info Cards -->
+        <div class="info-section" id="info-section">
+          <p class="info-section-title">¿Qué encontrarás aquí?</p>
+
+          <div class="info-grid">
+
+            <div class="info-card">
+              <div class="info-card-icon blue" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                  <polyline points="14 2 14 8 20 8"/>
+                  <line x1="16" y1="13" x2="8" y2="13"/>
+                  <line x1="16" y1="17" x2="8" y2="17"/>
+                  <polyline points="10 9 9 9 8 9"/>
+                </svg>
+              </div>
+              <h3 class="info-card-title">Casos Clínicos Reales</h3>
+              <p class="info-card-text">
+                Historias clínicas con datos de cover test, versiones, estereopsis y más.
+                Practica como en un consultorio real.
+              </p>
+            </div>
+
+            <div class="info-card">
+              <div class="info-card-icon green" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                  <polyline points="22 4 12 14.01 9 11.01"/>
+                </svg>
+              </div>
+              <h3 class="info-card-title">Retroalimentación Inmediata</h3>
+              <p class="info-card-text">
+                Recibe retroalimentación detallada sobre tus respuestas para reforzar
+                tu aprendizaje y corregir errores.
+              </p>
+            </div>
+
+            <div class="info-card">
+              <div class="info-card-icon muted" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="18" y1="20" x2="18" y2="10"/>
+                  <line x1="12" y1="20" x2="12" y2="4"/>
+                  <line x1="6" y1="20" x2="6" y2="14"/>
+                </svg>
+              </div>
+              <h3 class="info-card-title">Seguimiento de Progreso</h3>
+              <p class="info-card-text">
+                Monitorea cuántos casos has resuelto correctamente y observa
+                tu avance en el dominio del análisis sensoriomotor.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- VIEW: Casos Clínicos -->
+    <section class="view" id="view-casos" data-view="casos">
+      <div class="page-container case-page-container">
+
+        <!-- Case Header Bar -->
+        <div class="case-header" id="case-header">
+          <div class="case-header-left">
+            <button class="btn-icon-only" id="btn-back-home" data-navigate="inicio" title="Volver al inicio">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="19" y1="12" x2="5" y2="12"/>
+                <polyline points="12 19 5 12 12 5"/>
+              </svg>
+            </button>
+            <div class="case-header-info">
+              <span class="case-header-label">Caso Clínico</span>
+              <h2 class="case-header-title" id="case-title">—</h2>
+            </div>
+          </div>
+          <div class="case-header-right">
+            <span class="case-progress-badge" id="case-progress-badge">
+              <span id="case-current-num">1</span> / <span id="case-total-num">7</span>
+            </span>
+          </div>
+        </div>
+
+        <!-- Decorative Banner: Herramientas Optométricas -->
+        <div class="case-banner" id="case-banner" aria-hidden="true">
+          <svg viewBox="0 0 900 200" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+            <!-- Background gradient -->
+            <defs>
+              <linearGradient id="bannerGrad" x1="0" y1="0" x2="900" y2="200" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#E8F0FE"/>
+                <stop offset="100%" stop-color="#D4E4F9"/>
+              </linearGradient>
+            </defs>
+            <rect width="900" height="200" fill="url(#bannerGrad)"/>
+            <!-- Subtle grid lines -->
+            <line x1="0" y1="100" x2="900" y2="100" stroke="#C9D4EC" stroke-width="0.5" stroke-dasharray="6,8"/>
+            <line x1="450" y1="0" x2="450" y2="200" stroke="#C9D4EC" stroke-width="0.5" stroke-dasharray="6,8"/>
+            <!-- Retinoscope -->
+            <rect x="60" y="60" width="14" height="80" rx="7" fill="#2D5A9E"/>
+            <circle cx="67" cy="55" r="14" fill="#4475B8" stroke="#2D5A9E" stroke-width="2"/>
+            <circle cx="67" cy="55" r="8" fill="#BFD7F5"/>
+            <!-- Cover paddle -->
+            <rect x="120" y="65" width="28" height="45" rx="4" fill="#4475B8"/>
+            <rect x="131" y="108" width="6" height="30" rx="3" fill="#2D5A9E"/>
+            <!-- Ophthalmoscope -->
+            <rect x="190" y="50" width="12" height="100" rx="6" fill="#1E3A5F"/>
+            <ellipse cx="196" cy="48" rx="16" ry="10" fill="#2D5A9E" stroke="#1E3A5F" stroke-width="1.5"/>
+            <circle cx="196" cy="48" r="6" fill="#BFD7F5"/>
+            <!-- Trial lens frame -->
+            <rect x="260" y="80" width="120" height="50" rx="6" fill="none" stroke="#4475B8" stroke-width="3"/>
+            <line x1="320" y1="80" x2="320" y2="130" stroke="#4475B8" stroke-width="2"/>
+            <circle cx="290" cy="105" r="18" fill="#E8F0FE" stroke="#7BA7D4" stroke-width="1.5"/>
+            <circle cx="350" cy="105" r="18" fill="#E8F0FE" stroke="#7BA7D4" stroke-width="1.5"/>
+            <!-- Nose bridge line -->
+            <line x1="308" y1="105" x2="332" y2="105" stroke="#4475B8" stroke-width="2"/>
+            <!-- Left temple -->
+            <line x1="260" y1="100" x2="240" y2="100" stroke="#4475B8" stroke-width="3" stroke-linecap="round"/>
+            <!-- Right temple -->
+            <line x1="380" y1="100" x2="400" y2="100" stroke="#4475B8" stroke-width="3" stroke-linecap="round"/>
+            <!-- Prism bar -->
+            <rect x="430" y="85" width="100" height="30" rx="6" fill="#2D5A9E" opacity="0.8"/>
+            <rect x="445" y="92" width="12" height="16" rx="2" fill="#BFD7F5" opacity="0.9"/>
+            <rect x="462" y="92" width="12" height="16" rx="2" fill="#BFD7F5" opacity="0.9"/>
+            <rect x="479" y="92" width="12" height="16" rx="2" fill="#BFD7F5" opacity="0.9"/>
+            <rect x="496" y="92" width="12" height="16" rx="2" fill="#BFD7F5" opacity="0.9"/>
+            <text x="480" y="133" text-anchor="middle" font-family="monospace" font-size="9" fill="#4475B8" font-weight="600">BARRA PRISMÁTICA</text>
+            <!-- Worth 4-dot -->
+            <circle cx="580" cy="90" r="10" fill="#DC2626"/>
+            <circle cx="610" cy="90" r="10" fill="#16A34A"/>
+            <circle cx="580" cy="120" r="10" fill="#2563EB"/>
+            <circle cx="610" cy="120" r="10" fill="#2563EB"/>
+            <rect x="560" y="70" width="70" height="70" rx="6" fill="none" stroke="#C9D4EC" stroke-width="1.5"/>
+            <text x="595" y="152" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="#6B96C8">Worth 4-Dot</text>
+            <!-- Stereotest booklet -->
+            <rect x="660" y="60" width="60" height="80" rx="5" fill="white" stroke="#C9D4EC" stroke-width="2"/>
+            <rect x="660" y="60" width="60" height="16" rx="5" fill="#4475B8"/>
+            <rect x="666" y="82" width="48" height="4" rx="2" fill="#DEE8F4"/>
+            <rect x="666" y="90" width="48" height="4" rx="2" fill="#DEE8F4"/>
+            <rect x="666" y="98" width="30" height="4" rx="2" fill="#DEE8F4"/>
+            <text x="690" y="71" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" fill="white" font-weight="700">STEREO</text>
+            <!-- Pen light -->
+            <rect x="770" y="55" width="10" height="90" rx="5" fill="#4475B8"/>
+            <circle cx="775" cy="52" r="8" fill="#FDE68A" stroke="#E5A700" stroke-width="1.5"/>
+            <!-- Label banner -->
+            <text x="450" y="185" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#7BA7D4" font-weight="500" letter-spacing="2">HERRAMIENTAS DE ANÁLISIS SENSORIOMOTOR PEDIÁTRICO</text>
+          </svg>
+        </div>
+
+        <!-- Two-Column Case Layout -->
+        <div class="case-grid" id="case-grid">
+
+          <!-- LEFT: Historia Clínica -->
+          <div class="case-col-left">
+
+            <!-- Patient Info Card -->
+            <div class="clinic-card" id="card-patient">
+              <div class="clinic-card-header">
+                <!-- Circular Patient Avatar -->
+                <div class="patient-avatar" id="patient-avatar" aria-hidden="true">
+                  <svg viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="28" cy="28" r="28" fill="#BFD7F5"/>
+                    <!-- Body -->
+                    <ellipse cx="28" cy="48" rx="16" ry="12" fill="#4475B8"/>
+                    <!-- Shirt collar -->
+                    <path d="M22 40 L28 46 L34 40" fill="white" opacity="0.7"/>
+                    <!-- Head -->
+                    <circle cx="28" cy="26" r="13" fill="#FDDBB4"/>
+                    <!-- Hair -->
+                    <path d="M15 24 Q18 12 28 11 Q38 12 41 24 Q39 16 28 15 Q17 16 15 24Z" fill="#8B4513"/>
+                    <!-- Eyes -->
+                    <circle cx="24" cy="26" r="2" fill="#2D2D2D"/>
+                    <circle cx="32" cy="26" r="2" fill="#2D2D2D"/>
+                    <circle cx="24.7" cy="25.3" r="0.7" fill="white"/>
+                    <circle cx="32.7" cy="25.3" r="0.7" fill="white"/>
+                    <!-- Smile -->
+                    <path d="M24 31 Q28 35 32 31" stroke="#8B4513" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+                    <!-- Cheeks -->
+                    <circle cx="20" cy="30" r="3" fill="#F9A88A" opacity="0.5"/>
+                    <circle cx="36" cy="30" r="3" fill="#F9A88A" opacity="0.5"/>
+                  </svg>
+                </div>
+                <div class="clinic-card-header-text">
+                  <h3 class="clinic-card-title">Datos del Paciente</h3>
+                  <span class="clinic-card-subtitle">Historia clínica</span>
+                </div>
+              </div>
+              <div class="clinic-card-body">
+                <div class="clinic-field">
+                  <span class="clinic-field-label">Edad</span>
+                  <span class="clinic-field-value" id="field-edad">—</span>
+                </div>
+                <div class="clinic-field">
+                  <span class="clinic-field-label">Motivo de Consulta</span>
+                  <span class="clinic-field-value" id="field-motivo">—</span>
+                </div>
+                <div class="clinic-field">
+                  <span class="clinic-field-label">Antecedentes</span>
+                  <span class="clinic-field-value" id="field-antecedentes">—</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Motor Exam Card -->
+            <div class="clinic-card" id="card-motor">
+              <div class="clinic-card-header">
+                <div class="clinic-card-icon green">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                    <circle cx="12" cy="12" r="3"/>
+                  </svg>
+                </div>
+                <h3 class="clinic-card-title">Examen Motor</h3>
+              </div>
+              <div class="clinic-card-body">
+                <div class="clinic-field">
+                  <span class="clinic-field-label">Cover Test</span>
+                  <span class="clinic-field-value" id="field-cover-test">—</span>
+                </div>
+                <div class="clinic-field">
+                  <span class="clinic-field-label">Motilidad</span>
+                  <span class="clinic-field-value" id="field-motilidad">—</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Refraction Card -->
+            <div class="clinic-card" id="card-refraction">
+              <div class="clinic-card-header">
+                <div class="clinic-card-icon muted">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"/>
+                    <line x1="2" y1="12" x2="22" y2="12"/>
+                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                  </svg>
+                </div>
+                <h3 class="clinic-card-title">Refracción</h3>
+              </div>
+              <div class="clinic-card-body">
+                <div class="clinic-field">
+                  <span class="clinic-field-label">Agudeza Visual</span>
+                  <span class="clinic-field-value" id="field-agudeza">—</span>
+                </div>
+                <div class="clinic-field">
+                  <span class="clinic-field-label">Retinoscopía</span>
+                  <span class="clinic-field-value" id="field-retinoscopia">—</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- RIGHT: Análisis y Conducta -->
+          <div class="case-col-right">
+
+            <!-- Conduct Form Card -->
+            <div class="clinic-card conduct-card" id="card-conduct">
+              <div class="clinic-card-header">
+                <div class="clinic-card-icon blue">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                    <polyline points="22 4 12 14.01 9 11.01"/>
+                  </svg>
+                </div>
+                <h3 class="clinic-card-title">Análisis y Conducta</h3>
+              </div>
+              <div class="clinic-card-body">
+
+                <div class="form-group">
+                  <label class="form-label">Seleccione la conducta óptica recomendada:</label>
+                  <div class="radio-group" id="radio-group-conduct">
+                    <!-- Radio buttons populated by JS -->
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="textarea-justification">Justifique su razonamiento clínico:</label>
+                  <textarea
+                    class="form-textarea"
+                    id="textarea-justification"
+                    rows="5"
+                    placeholder="Escriba aquí su justificación clínica basada en los hallazgos del caso..."
+                  ></textarea>
+                </div>
+
+                <!-- Wrapper so JS hides the whole button block cleanly -->
+                <div id="evaluate-btn-wrapper">
+                  <button class="btn-primary btn-evaluate" id="btn-evaluate" disabled>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"/>
+                    </svg>
+                    Evaluar Conducta
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- ── Retroalimentación Académica (oculto hasta evaluar) ── -->
+            <div class="feedback-panel" id="feedback-panel" aria-live="polite" style="display:none;">
+
+              <!-- Banner: correcto / incorrecto -->
+              <div class="feedback-banner" id="feedback-banner">
+                <span class="feedback-banner-icon" id="feedback-icon" aria-hidden="true"></span>
+                <div class="feedback-banner-text">
+                  <span class="feedback-banner-title" id="feedback-title">—</span>
+                  <span class="feedback-banner-sub" id="feedback-subtitle">—</span>
+                </div>
+              </div>
+
+              <!-- Cuerpo del panel -->
+              <div class="feedback-body">
+
+                <!-- Tu respuesta vs correcta -->
+                <div class="feedback-row" id="feedback-row-student">
+                  <span class="feedback-row-label">Tu respuesta</span>
+                  <span class="feedback-row-value" id="feedback-student-answer">—</span>
+                </div>
+                <div class="feedback-row feedback-row-correct">
+                  <span class="feedback-row-label">Conducta correcta</span>
+                  <span class="feedback-row-value feedback-row-value--correct" id="feedback-correct">—</span>
+                </div>
+
+                <hr class="feedback-divider">
+
+                <!-- Justificación clínica -->
+                <div class="feedback-section">
+                  <h4 class="feedback-section-title">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+                      <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                    </svg>
+                    Justificación Clínica
+                  </h4>
+                  <p class="feedback-section-text" id="feedback-justification">—</p>
+                </div>
+
+                <hr class="feedback-divider">
+
+                <!-- Evidencia Científica -->
+                <div class="feedback-section">
+                  <h4 class="feedback-section-title">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                      <polyline points="14 2 14 8 20 8"/>
+                    </svg>
+                    Evidencia Científica
+                  </h4>
+                  <div class="feedback-vancouver">
+                    <span class="feedback-vancouver-label">Vancouver</span>
+                    <p class="feedback-vancouver-text" id="feedback-biblio">—</p>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- Acción: siguiente caso -->
+              <div class="feedback-actions">
+                <button class="btn-next-case" id="btn-next-case">
+                  <span id="btn-next-label">Siguiente Caso</span>
+                  <span class="btn-icon" aria-hidden="true">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="5" y1="12" x2="19" y2="12"/>
+                      <polyline points="12 5 19 12 12 19"/>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="app-footer">
+    <div class="footer-inner">
+      <p>OptoKids © 2026 — Herramienta educativa para estudiantes de optometría</p>
+    </div>
+  </footer>
+
+
+  <script src="app.js"></script>
+</body>
+</html>
